@@ -1,7 +1,9 @@
 <section class='randomPage'>
-  <div class='imgRandomBeer'>
-    <img src='{{image_url}}'alt='{{name}}'/>
-  </div>
+  {{#if image_url}}
+    <div class='imgRandomBeer'>
+      <img src='{{image_url}}'alt='{{name}}'/>
+    </div>
+  {{/if}}
   <div class='beerRandomPage'>
     <h2>{{name}}</h2>
     <p class='tagline'>{{tagline}}</p>
